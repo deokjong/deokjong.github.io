@@ -1,0 +1,40 @@
+baseURL = "https://deokjong.github.io/"
+languageCode = "ko-KR"
+title = "DeokJong"
+theme = "hugo-theme-techdoc"
+
+defaultContentLanguage = "ko"
+hasCJKLanguage = true
+enableRobotsTXT = true
+
+[params]
+  description = "DeokJong의 개인 블로그: 기술, 프로젝트, 생각의 기록"
+  github_repository = "https://github.com/deokjong/deokjong.github.io"
+  github_doc_repository = "https://github.com/deokjong/deokjong.github.io"
+  github_doc_repository_branch = "main"
+  github_doc_repository_path = "content/"
+  title = "DeokJong"
+  menu_style = "open-menu"
+  ordersectionsby = "weight"
+  menu_exclusion = []
+  custom_font_color = "#1a202c"
+  custom_background_color = "#f7fafc"
+
+[menu]
+  [[menu.main]]
+    name = "홈"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "GitHub"
+    url = "https://github.com/deokjong"
+    weight = 2
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+
