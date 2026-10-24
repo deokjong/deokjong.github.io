@@ -62,11 +62,11 @@ defaultContentLanguage = "ko"
     listDescTrunc = 100
     intLinkTooltip = true
   [params.flexsearch]
-    enabled = true
+    enabled = false
 
 [menu]
   [[menu.primary]]
     name = "문서"
-    url = "/docs/"
+    url = "/"
     identifier = "docs"
     weight = 10
