@@ -1,17 +1,30 @@
 ---
-title: "DeokJong"
-description: "기술을 배우고, 기록하고, 나누는 공간"
+date: 2017-10-19T15:26:15Z
+lastmod: 2019-10-26T15:26:15Z
+publishdate: 2018-11-23T15:26:15Z
+
+title: Home title
+description: Text about this post
+images:
+- images/pexels-photo-196666.jpeg
 ---
 
-# 안녕하세요, DeokJong입니다
+# Hugo Techdoc Theme
 
-이곳은 개발 과정에서 얻은 생각과 프로젝트 경험을 한국어로 기록하는 개인 블로그입니다.
+## The Techdoc is a Hugo Theme for technical documentation.
 
-## 이곳에서 다룰 내용
+## Features
 
-- 개발 도구와 워크플로
-- 프로젝트 회고와 구현 기록
-- 새롭게 배운 기술 개념과 일상적인 생각
-
-최근 글은 [블로그](/posts/)에서, 주제별 메모는 [기술 노트](/notes/)에서 확인할 수 있습니다.
-
+* Modern, Simple layout
+* Responsive web design
+* Documentation menu (Select [Menu style](getting-started/screenshot/#menu-style))
+* [Table Of Contents](sample/table-of-contents/) for the page (selective)
+* [Theme color](getting-started/screenshot/#theme-color)
+* [Edit link](getting-started/screenshot/#edit-link) to documentation repository
+* [Custom Shortcodes](sample/custom-shortcodes/)
+  * Code highlight with clipboard
+  * Alert panel
+  * Button
+* [Search Shortcode](sample/search-shortcode/) powered by [Algolia](https://www.algolia.com/)
+* Open Graph
+* Analytics with Google Analytics, Google Tag Manager

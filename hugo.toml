@@ -1,40 +1,77 @@
+# Techdoc exampleSite 기반 설정
 baseURL = "https://github.deokjong.com/"
 languageCode = "ko-KR"
-title = "DeokJong"
+title = "진덕종"
 theme = "hugo-theme-techdoc"
 
 defaultContentLanguage = "ko"
+defaultContentLanguageInSubdir = false
+enableMissingTranslationPlaceholders = false
 hasCJKLanguage = true
-enableRobotsTXT = true
+metaDataFormat = "yaml"
+pluralizeListTitles = false
+
+pygmentsCodeFences = true
+pygmentsUseClasses = true
 
 [params]
-  description = "DeokJong의 개인 블로그: 기술, 프로젝트, 생각의 기록"
-  github_repository = "https://github.com/deokjong/deokjong.github.io"
-  github_doc_repository = "https://github.com/deokjong/deokjong.github.io"
+  description = "진덕종의 기술 문서와 기록"
+  github_repository = "https://github.com/deokjong/deokjong.github.io/"
+  version = "1.1.0"
+  github_doc_repository = "https://github.com/deokjong/deokjong.github.io/"
   github_doc_repository_branch = "main"
   github_doc_repository_path = "content/"
-  title = "DeokJong"
+  google_analytics_id = ""
+  tag_manager_container_id = ""
+  google_site_verification = ""
+  title = "진덕종"
+  images = ["images/og-image.png"]
+  custom_font_color = ""
+  custom_background_color = ""
   menu_style = "open-menu"
   ordersectionsby = "weight"
-  menu_exclusion = []
-  custom_font_color = "#1a202c"
-  custom_background_color = "#f7fafc"
+  dateformat = ""
+  menu_exclusion = ["archives", "archive", "blog", "entry", "post", "posts"]
+  algolia_search_enable = true
+  algolia_indexName = "hugo-demo-techdoc"
+  algolia_appId = "7W4SAN4PLK"
+  algolia_apiKey = "cbf12a63ff72d9c5dc0c10c195cf9128"
 
 [menu]
   [[menu.main]]
     name = "홈"
-    url = "/"
+    url = "/index.html"
     weight = 1
+    identifier = "home"
+    pre = "<i class='fa fa-heart'></i>&nbsp;"
   [[menu.main]]
     name = "GitHub"
     url = "https://github.com/deokjong"
     weight = 2
+    identifier = "github"
+    pre = "<b>pre!</b> "
+    post = " <b>post!</b>"
+    [menu.main.params]
+      class = "github-menu-item"
 
 [markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark.renderer]
+    unsafe = true
   [markup.tableOfContents]
     startLevel = 2
-    endLevel = 4
+    endLevel = 6
+    ordered = false
 
+[outputs]
+  home = ["HTML", "RSS", "Algolia"]
+
+[outputFormats.Algolia]
+  baseName = "algolia"
+  mediaType = "application/json"
+  isPlainText = true
+  notAlternative = true
+
+[params.algolia]
+  vars = ["title", "summary", "content", "date", "publishdate", "description", "permalink", "keywords", "lastmod"]
+  params = ["tags", "categories"]

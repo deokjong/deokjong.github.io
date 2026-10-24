@@ -1,17 +1,17 @@
----
-title: "소개"
-weight: 10
----
++++
+title = "About Hugo"
+date = "2014-04-09"
+menu = "main"
++++
 
-# 소개
+Hugo is a static site engine written in Go.
 
-안녕하세요. 저는 **DeokJong**입니다.
 
-이 사이트는 개발하며 마주친 문제, 해결 과정, 그리고 나중의 나에게 도움이 될 메모를 정리하는 공간입니다. 짧은 실험부터 프로젝트 단위의 기록까지 꾸준히 쌓아 갑니다.
+It makes use of a variety of open source projects including:
 
-## 원칙
+* [Cobra](https://github.com/spf13/cobra)
+* [Viper](https://github.com/spf13/viper)
+* [J Walter Weatherman](https://github.com/spf13/jWalterWeatherman)
+* [Cast](https://github.com/spf13/cast)
 
-1. 가능한 한 한국어로 명확하게 씁니다.
-2. 재현할 수 있는 과정과 근거를 남깁니다.
-3. 배운 것은 실제 프로젝트에 연결합니다.
-
+Learn more and contribute on [GitHub](https://github.com/gohugoio).
