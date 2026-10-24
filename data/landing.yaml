@@ -13,7 +13,7 @@ hero:
       mobile: "gradient-mobile.webp"
 
   badge:
-    text: v0.1.0
+    text: Personal Notes
     color: primary # primary, secondary, success, danger, warning, info, light, dark
     pill: false # boolean
     soft: true # boolean
@@ -24,26 +24,26 @@ hero:
   #   alt: "Lotus Docs Logo"
   #   height: 80px
 
-  title: "Lotus Docs"
-  subtitle: A lightweight, **modern documentation** theme for Hugo. Easily customised for building **fast**, **secure**, and **SEO-friendly** documentation sites.
+  title: "진덕종"
+  subtitle: 개발하며 배우고, 만들고, 기록하는 개인 공간입니다. 기술 노트와 프로젝트 경험을 **간결하고 꾸준하게** 남깁니다.
 
   image:
     path: "images" # path to image under configured assets directory. default 'images'
     filename: "lotus_docs_screenshot.png" # filename of your hero image (including file extension)
-    alt: "Lotus Docs Screenshot" # Optional but recommended
+    alt: "진덕종의 기록 공간" # Optional but recommended
     boxShadow: true # default 'false' (excludes .svg images)
     rounded: true # round the image corners? default 'false' (excludes .svg images)
 
   ctaButton:
     icon: rocket_launch
-    btnText: "Get Started"
-    url: "/docs/quickstart/#create-a-new-lotus-docs-site"
+    btnText: "기록 살펴보기"
+    url: "/docs/"
   cta2Button:
     icon: construction
-    btnText: "In Development"
-    url: "https://github.com/colinwilson/lotusdocs"
+    btnText: "GitHub"
+    url: "https://github.com/deokjong"
 
-  info: "**Open Source** MIT Licensed."
+  info: "배우고, 만들고, 나눕니다."
 
 # Feature Grid
 featureGrid:
@@ -51,29 +51,29 @@ featureGrid:
   weight: 20
   template: feature grid
 
-  title: Why choose Lotus Docs?
-  subtitle: Lotus Docs is a highly configurable Hugo documentation theme. Yet, with the default configuration you can deploy and publish your documentation site in a matter of minutes. Check out some core features below.
+  title: 이곳에 기록하는 것
+  subtitle: 프로젝트에서 마주친 문제와 해결 과정, 그리고 새롭게 배운 내용을 나중의 나와 다른 개발자를 위해 정리합니다.
 
   items:
-    - title: Fast
+    - title: 기술 노트
       icon: speed
-      description: 4 x 100's score on Google Lighthouse by default. Lotus Docs removes unused CSS, prefetches asset links, and lazy loads content images.
+      description: 도구와 기술을 직접 써 보며 얻은 핵심을 짧고 명확하게 기록합니다.
       ctaLink:
-        text: learn more
+        text: 문서 보기
         url: /docs/
 
-    - title: SEO Friendly
+    - title: 프로젝트 기록
       icon: trending_up
-      description: Data is automatically structured to be SEO friendly. Includes Meta tags, Opengraph, and Twitter cards. Choose the settings that best suit you.
+      description: 구현 과정의 선택과 이유, 시행착오를 다시 꺼내 볼 수 있도록 남깁니다.
       ctaLink:
-        text: learn more
+        text: 문서 보기
         url: /docs/
 
-    - title: Secure by default
+    - title: 배움의 흔적
       icon: lock
-      description: Lotus Docs' default configuration scores A+ on Mozilla Observatory. You can update the default Security Headers to suit your requirements.
+      description: 새로 배운 개념을 실제 작업과 연결하며 이해한 내용을 정리합니다.
       ctaLink:
-        text: learn more
+        text: 문서 보기
         url: /docs/
 
     - title: Optional Features
