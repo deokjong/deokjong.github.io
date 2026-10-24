@@ -36,7 +36,7 @@ defaultContentLanguage = "ko"
   mono_font = "Fira Code"
 
   [params.footer]
-    copyright = "© :YEAR: 진덕종. [**Lotus Docs**](https://github.com/colinwilson/lotusdocs)로 제작"
+    copyright = "© :YEAR: 진덕종"
   [params.social]
     github = "deokjong"
   [params.docs]
@@ -67,6 +67,6 @@ defaultContentLanguage = "ko"
 [menu]
   [[menu.primary]]
     name = "문서"
-    url = "docs/"
+    url = "/docs/"
     identifier = "docs"
     weight = 10
