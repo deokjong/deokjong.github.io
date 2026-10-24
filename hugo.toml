@@ -1,6 +1,7 @@
 baseURL = "https://github.deokjong.com/"
 languageCode = "ko-KR"
 contentDir = "content"
+ignoreFiles = ['(^|[/\\])(fr|de)[/\\]']
 enableEmoji = true
 enableGitInfo = true
 defaultContentLanguage = "ko"
@@ -62,7 +63,8 @@ defaultContentLanguage = "ko"
     listDescTrunc = 100
     intLinkTooltip = true
   [params.flexsearch]
-    enabled = false
+    enabled = true
+    searchSectionsIndex = ["docs"]
 
 [menu]
   [[menu.primary]]
