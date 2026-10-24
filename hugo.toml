@@ -1,4 +1,4 @@
-baseURL = "https://deokjong.github.io/"
+baseURL = "https://github.deokjong.com/"
 languageCode = "ko-KR"
 title = "DeokJong"
 theme = "hugo-theme-techdoc"
